@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="D:\ForwardPlus\ForwardPlus\girlpower\forwardPlus_FinalShading.v4p" systemname="forwardPlus_FinalShading" filename="D:\ForwardPlus\ForwardPlus\girlpower\forwardPlus_FinalShading.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="D:\ForwardPlus\ForwardPlus\girlpower\forwardPlus_FinalShading.v4p" systemname="forwardPlus_FinalShading" filename="D:\ForwardPlus\ForwardPlus\girlpower\forwardPlus_FinalShading.v4p" scrollx="0" scrolly="1830">
    <BOUNDS type="Window" left="4376" top="24" width="22592" height="14512">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -231,6 +231,8 @@
    </PIN>
    <BOUNDS type="Box" left="872" top="9376">
    </BOUNDS>
+   <PIN pinname="Enabled" slicecount="1" values="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="560" srcpinname="Layer" dstnodeid="340" dstpinname="Layer 1">
    </LINK>
@@ -637,7 +639,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="884" top="12645" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="-88" top="7616" width="4624" height="6920">
+   <BOUNDS type="Window" left="0" top="7590" width="4590" height="6930">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
@@ -689,6 +691,8 @@
    </PIN>
    <PIN pinname="Pause" visible="1" slicecount="1" values="0">
    </PIN>
+   <PIN pinname="Change" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="716" srcpinname="Output" dstnodeid="684" dstpinname="Y Input Value">
    </LINK>
@@ -697,7 +701,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="9840" top="3210" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="20">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="s">
    </PIN>
