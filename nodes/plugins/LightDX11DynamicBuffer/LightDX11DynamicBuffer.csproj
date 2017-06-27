@@ -11,7 +11,7 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <OutputPath>bin\$(Platform)\$(Configuration)\</OutputPath>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-    <ReferencePath>..\..\..\__KOFA\vvvv_45beta34.2_x64\lib\core\;..\..\..\__KOFA\vvvv_45beta34.2_x64\lib\nodes\plugins\</ReferencePath>
+    <ReferencePath>$(VVVV45)\lib\core\;$(VVVV45)\lib\nodes\plugins\;$(VVVV45)\packs\dx11\core\</ReferencePath>
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
