@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
    <PATCH nodename="D:\ForwardPlus\ForwardPlus\girlpower\forwardPlus_FinalShading.v4p" systemname="forwardPlus_FinalShading" filename="D:\ForwardPlus\ForwardPlus\girlpower\forwardPlus_FinalShading.v4p" scrollx="0" scrolly="1830">
    <BOUNDS type="Window" left="4376" top="24" width="22592" height="14512">
    </BOUNDS>
@@ -459,7 +459,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11919" top="7290" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -471,7 +471,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="LIGHTHELPER">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="340" srcpinname="Layer Out" dstnodeid="586" dstpinname="Layer">

@@ -19,6 +19,7 @@ SamplerState g_samLinear : IMMUTABLE
 cbuffer cbPerDraw : register( b0 )
 {
 	float4x4 tVP : LAYERVIEWPROJECTION;
+	float4x4 tVI : VIEWINVERSE;
 	float4x4 tW : WORLD;
 	float alpha;
 };
@@ -47,7 +48,9 @@ vs2ps VS(VS_IN input)
 	
 	Light light = Lights[input.ii];
 	
-	float4 Pos = (input.PosO * float4(light.Range,light.Range,light.Range,1) ) + light.PositionWS; 
+	float4 Pos = float4(mul(input.PosO.xyz,(float3x3)tVI),1);
+	
+	Pos = (Pos * float4(light.Range,light.Range,light.Range,1) ) + light.PositionWS; 
     Out.PosWVP  = mul(Pos ,mul(tW,tVP));
 	Out.Color = light.Color;
 	Out.Color.w *= alpha;

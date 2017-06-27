@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="D:\ForwardPlus\ForwardPlus\nodes\modules\Renderer (DX11 ForwardPlus).v4p" systemname="Renderer (DX11 ForwardPlus)" filename="D:\ForwardPlus\ForwardPlus\modules\Renderer (DX11 ForwardPlus).v4p" scrollx="0" scrolly="0" locked="0" bgcolor="15527148">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="D:\ForwardPlus\ForwardPlus\nodes\modules\Renderer (DX11 ForwardPlus).v4p" systemname="Renderer (DX11 ForwardPlus)" filename="D:\ForwardPlus\ForwardPlus\modules\Renderer (DX11 ForwardPlus).v4p" scrollx="0" scrolly="35625" locked="0" bgcolor="15527148">
    <BOUNDS type="Window" left="4376" top="24" width="22592" height="14512">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -4167,7 +4167,7 @@
    <NODE systemname="Rasterizer (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Rasterizer (DX11.RenderState)" componentmode="Hidden" id="384">
    <BOUNDS type="Node" left="1635" top="42105" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Mode" slicecount="1" values="BackCullWireframe">
+   <PIN pinname="Mode" slicecount="1" values="BackCullSimple">
    </PIN>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
@@ -4197,8 +4197,6 @@
    </LINKPOINT>
    <LINKPOINT x="2801" y="37032">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="357" srcpinname="Geometry Out" dstnodeid="356" dstpinname="Geometry In">
    </LINK>
    <LINK srcnodeid="64" srcpinname="Layer Out" dstnodeid="65" dstpinname="Layer">
    </LINK>
@@ -4337,5 +4335,17 @@
    <LINK srcnodeid="360" srcpinname="Layer Out" dstnodeid="222" dstpinname="Layer 3">
    </LINK>
    <LINK srcnodeid="222" srcpinname="Layer Out" dstnodeid="1" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Segment (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Segment (DX11.Geometry)" componentmode="Hidden" id="396">
+   <BOUNDS type="Node" left="2580" top="40980" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2580" top="40980" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Geometry Out" visible="1">
+   </PIN>
+   <PIN pinname="Inner Radius" slicecount="1" values="0.95">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="396" srcpinname="Geometry Out" dstnodeid="356" dstpinname="Geometry In">
    </LINK>
    </PATCH>
