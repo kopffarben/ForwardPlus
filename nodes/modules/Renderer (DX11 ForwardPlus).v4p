@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\ForwardPlus\ForwardPlus\nodes\modules\Renderer (DX11 ForwardPlus).v4p" systemname="Renderer (DX11 ForwardPlus)" filename="D:\ForwardPlus\ForwardPlus\modules\Renderer (DX11 ForwardPlus).v4p" scrollx="0" scrolly="33765" locked="0" bgcolor="15527148">
+   <PATCH nodename="D:\___Node17\vvvv_50beta35.8_x64\packs\ForwardPlus\nodes\modules\Renderer (DX11 ForwardPlus).v4p" systemname="Renderer (DX11 ForwardPlus)" filename="D:\ForwardPlus\ForwardPlus\modules\Renderer (DX11 ForwardPlus).v4p" scrollx="0" scrolly="33765" locked="0" bgcolor="15527148">
    <BOUNDS type="Window" left="4376" top="24" width="22592" height="14512">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -4285,7 +4285,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="7245" top="42105" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.2">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

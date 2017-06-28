@@ -10,6 +10,11 @@
 #include "finalshading.fxh"
 #endif
 
+struct PS_OUT
+{
+	float4 Color 	: SV_Target0;
+	float  Opacity	: SV_Target1;
+};
 
 cbuffer cbPerDraw : register(b0)
 {
@@ -17,6 +22,7 @@ cbuffer cbPerDraw : register(b0)
 	float4x4 tP: PROJECTION; 
 	float4x4 tVP: VIEWPROJECTION;
 	bool useForwardPlus;
+	bool useOIT;
 };
 
 cbuffer cbPerObj : register( b1 )
@@ -47,7 +53,7 @@ VertexShaderOutput VS_main( AppData IN )
 }
 
 [earlydepthstencil]
-float4 PS_main( VertexShaderOutput IN ) : SV_TARGET
+PS_OUT PS_main( VertexShaderOutput IN ) : SV_TARGET
 {
     // Everything is in view space.
     const float4 eyePos = { 0, 0, 0, 1 };
@@ -214,7 +220,32 @@ float4 PS_main( VertexShaderOutput IN ) : SV_TARGET
         specular *= lit.Specular;
     }
 	
-    return float4( ( ambient + emissive + diffuse + specular ).rgb, alpha * mat.Opacity );
+	PS_OUT Out = (PS_OUT)0;
+	
+	float4 color = float4( ( ambient + emissive + diffuse + specular ).rgb, alpha * mat.Opacity );
+	
+	if (useOIT)
+	{
+		// Weight Function
+		color.rgb *= color.a* mat.Opacity;
+		float cpart		= (min(1.0, max(max(color.r, color.g), max(color.b, color.a)) * 40.0 + 0.01));
+		float z 		= IN.position.z* IN.position.w;
+		float weight 	= cpart * cpart * clamp(0.03 / (1e-5 + pow(z / 200, 4.0)), 1e-2, 3e3);
+		
+		// Blend Func: GL_ONE, GL_ONE
+		Out.Color 	= color * weight;
+		
+		// Blend Func: GL_ZERO, GL_ONE_MINUS_SRC_ALPHA
+		Out.Opacity = color.a;
+	} else
+	{
+		Out.Color 	= color;
+		Out.Opacity = color.a;
+	}
+	
+	
+	
+    return Out;
 
 }
 

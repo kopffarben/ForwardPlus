@@ -47,7 +47,7 @@ namespace VVVV.Nodes.DX11
 
     [PluginInfo(Name = "DynamicBuffer", Category = "DX11", Version = "ForwardPlus Material", Author = "kopffarbens")]
     public class MaterialBuffer : VVVV.DX11.Nodes.DynamicArrayBuffer< VVVV.Nodes.DX11.Material>
-    {
+    { 
         [Input("GlobalAmbient", AutoValidate = false)]
         protected ISpread<Color4> FGlobalAmbient;
 		
