@@ -59,7 +59,6 @@
     <Reference Include="VVVV.Utils3rdParty" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ForwardPlusDynamicBufferNode.cs" />
     <Compile Include="LightDX11DynamicBufferNode.cs" />
     <Compile Include="MaterialDX11DynamicBufferNode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

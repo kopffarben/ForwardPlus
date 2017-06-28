@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 using SlimDX;
 using VVVV.DX11.Nodes; 
 using VVVV.PluginInterfaces.V2;
-
+ 
 namespace VVVV.Nodes.DX11
 {
     [StructLayout(LayoutKind.Sequential)]

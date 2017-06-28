@@ -794,6 +794,30 @@
    </LINK>
    <LINK srcnodeid="48" srcpinname="Output Node" dstnodeid="0" dstpinname="Geometry">
    </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="54">
+   <BOUNDS type="Box" left="7500" top="7155" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7500" top="7155" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="useForwardPlus">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="0" dstpinname="useForwardPlus">
+   </LINK>
    <NODE id="10" systemname="DynamicBuffer (DX11 ForwardPlus Material)" filename="%VVVV%\packs\ForwardPlus\nodes\plugins\ForwardPlusDynamicBuffer\ForwardPlusDynamicBuffer.csproj" nodename="DynamicBuffer (DX11 ForwardPlus Material)" componentmode="Hidden">
    <BOUNDS type="Node" left="1500" top="3180" width="24690" height="270">
    </BOUNDS>
@@ -893,29 +917,5 @@
    <LINK srcnodeid="15" srcpinname="Color Output" dstnodeid="10" dstpinname="AmbientColor">
    </LINK>
    <LINK srcnodeid="14" srcpinname="Color Output" dstnodeid="10" dstpinname="GlobalAmbient">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="54">
-   <BOUNDS type="Box" left="7500" top="7155" width="480" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="7500" top="7155" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="useForwardPlus">
-   </PIN>
-   <PIN pinname="Default" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="0" dstpinname="useForwardPlus">
    </LINK>
    </PATCH>
