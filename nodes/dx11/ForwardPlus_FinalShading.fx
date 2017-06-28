@@ -16,6 +16,7 @@ cbuffer cbPerDraw : register(b0)
 	float4x4 tV: VIEW;
 	float4x4 tP: PROJECTION; 
 	float4x4 tVP: VIEWPROJECTION;
+	bool useForwardPlus;
 };
 
 cbuffer cbPerObj : register( b1 )
@@ -153,37 +154,44 @@ float4 PS_main( VertexShaderOutput IN ) : SV_TARGET
 
     LightingResult lit = (LightingResult)0; // DoLighting( Lights, mat, eyePos, P, N );
 
-    for ( uint i = 0; i < lightCount; i++ )
-    {
-        uint lightIndex = LightIndexList[startOffset + i];
-        Light light = Lights[lightIndex];
-
-        LightingResult result = (LightingResult)0;
-
-        // Skip point and spot lights that are out of range of the point being shaded.
-        if ( light.Type != DIRECTIONAL_LIGHT && length( light.PositionVS - P ) > light.Range ) continue;
-
-        switch ( light.Type )
-        {
-        case DIRECTIONAL_LIGHT:
-        {
-            result = DoDirectionalLight( light, mat, V, P, N );
-        }
-        break;
-        case POINT_LIGHT:
-        {
-            result = DoPointLight( light, mat, V, P, N );
-        }
-        break;
-        case SPOT_LIGHT:
-        {
-            result = DoSpotLight( light, mat, V, P, N );
-        }
-        break;
-        }
-        lit.Diffuse += result.Diffuse;
-        lit.Specular += result.Specular;
-    }
+	if (useForwardPlus)
+	{
+	    for ( uint i = 0; i < lightCount; i++ )
+	    {
+	        uint lightIndex = LightIndexList[startOffset + i];
+	        Light light = Lights[lightIndex];
+	
+	        LightingResult result = (LightingResult)0;
+	
+	        // Skip point and spot lights that are out of range of the point being shaded.
+	        if ( light.Type != DIRECTIONAL_LIGHT && length( light.PositionVS - P ) > light.Range ) continue;
+	
+	        switch ( light.Type )
+	        {
+	        case DIRECTIONAL_LIGHT:
+	        {
+	            result = DoDirectionalLight( light, mat, V, P, N );
+	        }
+	        break;
+	        case POINT_LIGHT:
+	        {
+	            result = DoPointLight( light, mat, V, P, N );
+	        }
+	        break;
+	        case SPOT_LIGHT:
+	        {
+	            result = DoSpotLight( light, mat, V, P, N );
+	        }
+	        break;
+	        }
+	        lit.Diffuse += result.Diffuse;
+	        lit.Specular += result.Specular;
+	    }	
+	} 
+	else 
+	{
+		lit = DoLighting( Lights, mat, eyePos, P, N );
+	}
     
     diffuse *= float4( lit.Diffuse.rgb, 1.0f ); // Discard the alpha value from the lighting calculations.
 

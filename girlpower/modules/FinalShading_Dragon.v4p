@@ -381,9 +381,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="29" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="24120" top="7245" width="1950" height="645">
+   <BOUNDS type="Box" left="25590" top="7245" width="1950" height="645">
    </BOUNDS>
-   <BOUNDS type="Node" left="24120" top="7245" width="0" height="0">
+   <BOUNDS type="Node" left="25590" top="7245" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -399,19 +399,19 @@
    </PIN>
    </NODE>
    <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="30">
-   <BOUNDS type="Node" left="7539" top="4890" width="100" height="100">
+   <BOUNDS type="Node" left="9039" top="4890" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Filename" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="7539" top="4890">
+   <BOUNDS type="Box" left="9039" top="4890">
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="31" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="7546" top="4185" width="5175" height="360">
+   <BOUNDS type="Box" left="9046" top="4185" width="5175" height="360">
    </BOUNDS>
-   <BOUNDS type="Node" left="7546" top="4185" width="0" height="0">
+   <BOUNDS type="Node" left="9046" top="4185" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\PhotosculptTextures-free10pack\photosculpt-squarerock-ambientocclusion.jpg">
    </PIN>
@@ -425,19 +425,19 @@
    </PIN>
    </NODE>
    <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="32">
-   <BOUNDS type="Node" left="10575" top="5490" width="100" height="100">
+   <BOUNDS type="Node" left="12045" top="5490" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Filename" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="10575" top="5490">
+   <BOUNDS type="Box" left="12045" top="5490">
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="33" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="10582" top="4785" width="5175" height="360">
+   <BOUNDS type="Box" left="12052" top="4785" width="5175" height="360">
    </BOUNDS>
-   <BOUNDS type="Node" left="10582" top="4785" width="0" height="0">
+   <BOUNDS type="Node" left="12052" top="4785" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\PhotosculptTextures-free10pack\photosculpt-squarerock-diffuse.jpg">
    </PIN>
@@ -451,19 +451,19 @@
    </PIN>
    </NODE>
    <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="34">
-   <BOUNDS type="Node" left="16591" top="7440" width="100" height="100">
+   <BOUNDS type="Node" left="18061" top="7440" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Filename" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="16591" top="7440">
+   <BOUNDS type="Box" left="18061" top="7440">
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="35" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="16590" top="6735" width="5175" height="360">
+   <BOUNDS type="Box" left="18060" top="6735" width="5175" height="360">
    </BOUNDS>
-   <BOUNDS type="Node" left="16590" top="6735" width="0" height="0">
+   <BOUNDS type="Node" left="18060" top="6735" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\PhotosculptTextures-free10pack\photosculpt-squarerock-displace.jpg">
    </PIN>
@@ -477,19 +477,19 @@
    </PIN>
    </NODE>
    <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="36">
-   <BOUNDS type="Node" left="15090" top="6675" width="100" height="100">
+   <BOUNDS type="Node" left="16560" top="6675" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Filename" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="15090" top="6675">
+   <BOUNDS type="Box" left="16560" top="6675">
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="37" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="15105" top="5970" width="5175" height="360">
+   <BOUNDS type="Box" left="16575" top="5970" width="5175" height="360">
    </BOUNDS>
-   <BOUNDS type="Node" left="15105" top="5970" width="0" height="0">
+   <BOUNDS type="Node" left="16575" top="5970" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\PhotosculptTextures-free10pack\photosculpt-squarerock-normal.jpg">
    </PIN>
@@ -503,19 +503,19 @@
    </PIN>
    </NODE>
    <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="38">
-   <BOUNDS type="Node" left="12690" top="6075" width="100" height="100">
+   <BOUNDS type="Node" left="14190" top="6075" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
    <PIN pinname="Filename" visible="1">
    </PIN>
-   <BOUNDS type="Box" left="12690" top="6075">
+   <BOUNDS type="Box" left="14190" top="6075">
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="39" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="12705" top="5370" width="5176" height="360">
+   <BOUNDS type="Box" left="14205" top="5370" width="5176" height="360">
    </BOUNDS>
-   <BOUNDS type="Node" left="12705" top="5370" width="0" height="0">
+   <BOUNDS type="Node" left="14205" top="5370" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="..\assets\PhotosculptTextures-free10pack\photosculpt-squarerock-specular.jpg">
    </PIN>
@@ -529,9 +529,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="40" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="13575" top="8100" width="795" height="240">
+   <BOUNDS type="Box" left="15060" top="8100" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="13575" top="8100" width="0" height="0">
+   <BOUNDS type="Node" left="15060" top="8100" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -539,9 +539,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="41" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="18105" top="8100" width="795" height="240">
+   <BOUNDS type="Box" left="19575" top="8100" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="18105" top="8100" width="0" height="0">
+   <BOUNDS type="Node" left="19575" top="8100" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -549,9 +549,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="42" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="16591" top="8100" width="795" height="240">
+   <BOUNDS type="Box" left="18061" top="8100" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="16591" top="8100" width="0" height="0">
+   <BOUNDS type="Node" left="18061" top="8100" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -559,9 +559,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="43" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="15090" top="8100" width="795" height="240">
+   <BOUNDS type="Box" left="16560" top="8100" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="15090" top="8100" width="0" height="0">
+   <BOUNDS type="Node" left="16560" top="8100" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -569,9 +569,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="44" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="12060" top="8100" width="795" height="240">
+   <BOUNDS type="Box" left="13560" top="8100" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="12060" top="8100" width="0" height="0">
+   <BOUNDS type="Node" left="13560" top="8100" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -581,9 +581,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="45" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="7539" top="8100" width="795" height="240">
+   <BOUNDS type="Box" left="9039" top="8100" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="7539" top="8100" width="0" height="0">
+   <BOUNDS type="Node" left="9039" top="8100" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -591,9 +591,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="46" systemname="IOBox (Node)">
-   <BOUNDS type="Box" left="10582" top="8100" width="795" height="240">
+   <BOUNDS type="Box" left="12052" top="8100" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="10582" top="8100" width="0" height="0">
+   <BOUNDS type="Node" left="12052" top="8100" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
    </PIN>
@@ -665,9 +665,9 @@
    <LINK srcnodeid="32" srcpinname="Texture Out" dstnodeid="46" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="38" srcpinname="Texture Out" dstnodeid="44" dstpinname="Input Node" linkstyle="VHV">
-   <LINKPOINT x="12715" y="6618">
+   <LINKPOINT x="14215" y="6618">
    </LINKPOINT>
-   <LINKPOINT x="12605" y="6733">
+   <LINKPOINT x="14105" y="6733">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="39" srcpinname="Output String" dstnodeid="38" dstpinname="Filename">
@@ -685,9 +685,9 @@
    <NODE id="52" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
    <PIN pinname="Descriptive Name" slicecount="1" values="|Input String|">
    </PIN>
-   <BOUNDS type="Box" left="24120" top="500" width="750" height="240">
+   <BOUNDS type="Box" left="25605" top="650" width="750" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="24120" top="500" width="750" height="240">
+   <BOUNDS type="Node" left="25605" top="650" width="750" height="240">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="52" srcpinname="Output String" dstnodeid="29" dstpinname="Input String">
@@ -709,7 +709,7 @@
    <LINK srcnodeid="53" srcpinname="Output Enum" dstnodeid="6" dstpinname="Mode">
    </LINK>
    <NODE systemname="ForwardPlus_FinalShading (DX11.Effect)" filename="..\..\nodes\dx11\ForwardPlus_FinalShading.fx" nodename="ForwardPlus_FinalShading (DX11.Effect)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="1500" top="8820" width="22695" height="270">
+   <BOUNDS type="Node" left="1500" top="8820" width="24135" height="270">
    </BOUNDS>
    <PIN pinname="Layer In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -767,6 +767,8 @@
    </PIN>
    <BOUNDS type="Box" left="1500" top="8820">
    </BOUNDS>
+   <PIN pinname="useForwardPlus" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Render State" dstnodeid="0" dstpinname="Render State">
    </LINK>
@@ -891,5 +893,29 @@
    <LINK srcnodeid="15" srcpinname="Color Output" dstnodeid="10" dstpinname="AmbientColor">
    </LINK>
    <LINK srcnodeid="14" srcpinname="Color Output" dstnodeid="10" dstpinname="GlobalAmbient">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="54">
+   <BOUNDS type="Box" left="7500" top="7155" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7500" top="7155" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="useForwardPlus">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="54" srcpinname="Y Output Value" dstnodeid="0" dstpinname="useForwardPlus">
    </LINK>
    </PATCH>
