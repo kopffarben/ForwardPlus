@@ -160,8 +160,6 @@ float4 PS_main( VertexShaderOutput IN ) : SV_TARGET
 
         LightingResult result = (LightingResult)0;
 
-        // Skip lights that are not enabled.
-        //if ( !light.Enabled ) continue;
         // Skip point and spot lights that are out of range of the point being shaded.
         if ( light.Type != DIRECTIONAL_LIGHT && length( light.PositionVS - P ) > light.Range ) continue;
 

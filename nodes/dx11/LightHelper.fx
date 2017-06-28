@@ -50,7 +50,7 @@ vs2ps VS(VS_IN input)
 	
 	float4 Pos = float4(mul(input.PosO.xyz,(float3x3)tVI),1);
 	
-	Pos = (Pos * float4(light.Range,light.Range,light.Range,1) ) + light.PositionWS; 
+	Pos = (Pos * float4(light.Range,light.Range,light.Range,1) * float4(2,2,2,1) ) + light.PositionWS; 
     Out.PosWVP  = mul(Pos ,mul(tW,tVP));
 	Out.Color = light.Color;
 	Out.Color.w *= alpha;

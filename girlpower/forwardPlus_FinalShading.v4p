@@ -41,7 +41,7 @@
    </BOUNDS>
    <PIN pinname="Value Type" slicecount="1" values="Integer">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="32">
+   <PIN pinname="Y Input Value" slicecount="1" values="8">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="BLOCK_SIZE">
    </PIN>
@@ -459,7 +459,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="11919" top="7290" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -471,7 +471,7 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="LIGHTHELPER">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="1">
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="340" srcpinname="Layer Out" dstnodeid="586" dstpinname="Layer">
@@ -501,7 +501,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="10427" top="7290" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="46">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="77">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>

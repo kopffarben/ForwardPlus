@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\ForwardPlus\ForwardPlus\nodes\modules\Renderer (DX11 ForwardPlus).v4p" systemname="Renderer (DX11 ForwardPlus)" filename="D:\ForwardPlus\ForwardPlus\modules\Renderer (DX11 ForwardPlus).v4p" scrollx="0" scrolly="35625" locked="0" bgcolor="15527148">
+   <PATCH nodename="D:\ForwardPlus\ForwardPlus\nodes\modules\Renderer (DX11 ForwardPlus).v4p" systemname="Renderer (DX11 ForwardPlus)" filename="D:\ForwardPlus\ForwardPlus\modules\Renderer (DX11 ForwardPlus).v4p" scrollx="0" scrolly="33765" locked="0" bgcolor="15527148">
    <BOUNDS type="Window" left="4376" top="24" width="22592" height="14512">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
@@ -3698,24 +3698,8 @@
    <BOUNDS type="Box" left="1635" top="43230">
    </BOUNDS>
    </NODE>
-   <NODE systemname="Sphere (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Sphere (DX11.Geometry)" componentmode="Hidden" id="357">
-   <BOUNDS type="Node" left="3090" top="42105" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Resolution X" slicecount="1" visible="1" values="50">
-   </PIN>
-   <PIN pinname="Resolution Y" slicecount="1" visible="1" values="50">
-   </PIN>
-   <PIN pinname="Geometry Out" visible="1">
-   </PIN>
-   <PIN pinname="Radius" slicecount="1" visible="1" values="1">
-   </PIN>
-   <BOUNDS type="Box" left="3090" top="42105">
-   </BOUNDS>
-   </NODE>
    <NODE systemname="IndexedInstancer (DX11.Drawer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="IndexedInstancer (DX11.Drawer)" componentmode="Hidden" id="356">
-   <BOUNDS type="Node" left="3090" top="42480" width="1800" height="256">
+   <BOUNDS type="Node" left="3090" top="42630" width="1800" height="256">
    </BOUNDS>
    <PIN pinname="Geometry In" visible="1" slicecount="1" values="||">
    </PIN>
@@ -3725,13 +3709,13 @@
    </PIN>
    <PIN pinname="Enabled" slicecount="1" visible="-1" pintype="Input" values="1">
    </PIN>
-   <BOUNDS type="Box" left="3090" top="42480">
+   <BOUNDS type="Box" left="3090" top="42630">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="356" srcpinname="Geometry Out" dstnodeid="355" dstpinname="Geometry" linkstyle="VHV">
-   <LINKPOINT x="3120" y="42915">
+   <LINKPOINT x="3120" y="43015">
    </LINKPOINT>
-   <LINKPOINT x="4470" y="42915">
+   <LINKPOINT x="4470" y="42965">
    </LINKPOINT>
    </LINK>
    <NODE systemname="Semantics (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Semantics (DX11.Layer)" componentmode="Hidden" id="358">
@@ -3815,26 +3799,6 @@
    <LINK srcnodeid="361" srcpinname="Y Output Value" dstnodeid="356" dstpinname="Instance Count">
    </LINK>
    <LINK srcnodeid="358" srcpinname="Layer Out" dstnodeid="360" dstpinname="Layer 1">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="362" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="3601" top="41654" width="696" height="208">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3601" top="41654" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="8">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="362" srcpinname="Y Output Value" dstnodeid="357" dstpinname="Resolution X">
-   </LINK>
-   <LINK srcnodeid="362" srcpinname="Y Output Value" dstnodeid="357" dstpinname="Resolution Y">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="364" systemname="IOBox (Node)">
    <BOUNDS type="Box" left="10376" top="40224" width="792" height="240">
@@ -4299,19 +4263,19 @@
    </LINKPOINT>
    </LINK>
    <NODE systemname="Blend (DX11.RenderState)" filename="%VVVV%\packs\dx11\nodes\plugins\VVVV.DX11.Nodes.dll" nodename="Blend (DX11.RenderState)" componentmode="Hidden" id="394">
-   <BOUNDS type="Node" left="1635" top="42585" width="100" height="100">
+   <BOUNDS type="Node" left="1635" top="42735" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Render State" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Mode" slicecount="1" values="Blend">
    </PIN>
-   <BOUNDS type="Box" left="1635" top="42585">
+   <BOUNDS type="Box" left="1635" top="42735">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="394" srcpinname="Render State" dstnodeid="355" dstpinname="Render State" linkstyle="VHV">
-   <LINKPOINT x="1665" y="43050">
+   <LINKPOINT x="1665" y="43150">
    </LINKPOINT>
-   <LINKPOINT x="3075" y="43050">
+   <LINKPOINT x="3075" y="43100">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="384" srcpinname="Render State" dstnodeid="394" dstpinname="Render State">
@@ -4337,13 +4301,15 @@
    <LINK srcnodeid="222" srcpinname="Layer Out" dstnodeid="1" dstpinname="Input Node">
    </LINK>
    <NODE systemname="Segment (DX11.Geometry)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Segment (DX11.Geometry)" componentmode="Hidden" id="396">
-   <BOUNDS type="Node" left="2580" top="40980" width="100" height="100">
+   <BOUNDS type="Node" left="3075" top="42060" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="2580" top="40980" width="3000" height="3000">
+   <BOUNDS type="Box" left="3075" top="42060" width="3000" height="3000">
    </BOUNDS>
    <PIN pinname="Geometry Out" visible="1">
    </PIN>
    <PIN pinname="Inner Radius" slicecount="1" values="0.95">
+   </PIN>
+   <PIN pinname="Resolution" slicecount="1" values="32">
    </PIN>
    </NODE>
    <LINK srcnodeid="396" srcpinname="Geometry Out" dstnodeid="356" dstpinname="Geometry In">
