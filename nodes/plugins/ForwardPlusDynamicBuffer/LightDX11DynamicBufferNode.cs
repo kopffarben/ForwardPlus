@@ -28,7 +28,7 @@ namespace VVVV.Nodes.DX11
     	public uint		Type;
     }; 
 
-    [PluginInfo(Name = "DynamicBuffer", Category = "DX11", Version = "Light", Author = "vux")]
+    [PluginInfo(Name = "DynamicBuffer", Category = "DX11", Version = "ForwardPlus Light", Author = "kopffarben")]
     public class LightBuffer : VVVV.DX11.Nodes.DynamicArrayBuffer< VVVV.Nodes.DX11.Light>
     {
         [Input("View", AutoValidate = false)]

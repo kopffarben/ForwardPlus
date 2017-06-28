@@ -45,7 +45,7 @@ namespace VVVV.Nodes.DX11
     	//-------------------------- ( 16 bytes )
     };  //-------------------------- ( 16 * 10 = 160 bytes )
 
-    [PluginInfo(Name = "DynamicBuffer", Category = "DX11", Version = "Material", Author = "vux")]
+    [PluginInfo(Name = "DynamicBuffer", Category = "DX11", Version = "ForwardPlus Material", Author = "kopffarbens")]
     public class MaterialBuffer : VVVV.DX11.Nodes.DynamicArrayBuffer< VVVV.Nodes.DX11.Material>
     {
         [Input("GlobalAmbient", AutoValidate = false)]

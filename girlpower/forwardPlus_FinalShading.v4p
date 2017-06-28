@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\ForwardPlus\ForwardPlus\girlpower\forwardPlus_FinalShading.v4p" systemname="forwardPlus_FinalShading" filename="D:\ForwardPlus\ForwardPlus\girlpower\forwardPlus_FinalShading.v4p" scrollx="0" scrolly="1830">
+   <PATCH nodename="D:\___Node17\vvvv_50beta35.8_x64\packs\ForwardPlus\girlpower\forwardPlus_FinalShading.v4p" systemname="forwardPlus_FinalShading" filename="D:\ForwardPlus\ForwardPlus\girlpower\forwardPlus_FinalShading.v4p" scrollx="0" scrolly="1830">
    <BOUNDS type="Window" left="4376" top="24" width="22592" height="14512">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">

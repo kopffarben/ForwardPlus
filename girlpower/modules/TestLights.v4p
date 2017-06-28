@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
-   <PATCH nodename="D:\ForwardPlus\ForwardPlus\girlpower\modules\TestLights.v4p" systemname="TestLights" filename="D:\ForwardPlus\ForwardPlus\girlpower\modules\TestLights.v4p" scrollx="0" scrolly="-360">
+   <PATCH nodename="D:\___Node17\vvvv_50beta35.8_x64\packs\ForwardPlus\girlpower\modules\TestLights.v4p" systemname="TestLights" filename="D:\ForwardPlus\ForwardPlus\girlpower\modules\TestLights.v4p" scrollx="0" scrolly="-360">
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="2760" top="7785" width="795" height="720">
    </BOUNDS>
@@ -428,38 +428,6 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    </NODE>
-   <NODE systemname="DynamicBuffer (DX11 Light)" filename="..\..\..\..\__forwardPlus\plugins\LightDX11DynamicBuffer\LightDX11DynamicBuffer.csproj" nodename="DynamicBuffer (DX11 Light)" componentmode="Hidden" id="33">
-   <BOUNDS type="Node" left="645" top="9206" width="11730" height="270">
-   </BOUNDS>
-   <PIN pinname="View" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="PositionXYZ" visible="1" slicecount="6" values="-0.785505414009094,-0.200481578707695,-1.56642508506775,0.648966252803802,-2.16707730293274,-0.472353965044022">
-   </PIN>
-   <PIN pinname="DirectionXYZ" visible="1">
-   </PIN>
-   <PIN pinname="Color" visible="1">
-   </PIN>
-   <PIN pinname="Enabled" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Selected" visible="1" slicecount="1" values="10">
-   </PIN>
-   <PIN pinname="Type" visible="1">
-   </PIN>
-   <PIN pinname="Buffer" visible="1">
-   </PIN>
-   <PIN pinname="Intensity" visible="1">
-   </PIN>
-   <PIN pinname="Range" visible="1">
-   </PIN>
-   <PIN pinname="SpotlightAngle" visible="1">
-   </PIN>
-   <PIN pinname="Element Count" visible="1" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Apply" visible="1">
-   </PIN>
-   <PIN pinname="PosVSXYZW" visible="1">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Period">
    </LINK>
    <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="20" dstpinname="Pause">
@@ -509,6 +477,122 @@
    </BOUNDS>
    <BOUNDS type="Node" left="660" top="650" width="750" height="240">
    </BOUNDS>
+   </NODE>
+   <NODE id="35" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Buffer">
+   </PIN>
+   <BOUNDS type="Box" left="6465" top="10215" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6465" top="10215" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Spread Count">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Input" linkstyle="VHV">
+   <LINKPOINT x="4755" y="1253">
+   </LINKPOINT>
+   <LINKPOINT x="11235" y="1253">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="5" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="27" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Hue">
+   </LINK>
+   <LINK srcnodeid="30" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Width">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="12" dstpinname="Y Input Value">
+   </LINK>
+   <BOUNDS type="Window" left="4376" top="24" width="22592" height="14512">
+   </BOUNDS>
+   <PACK Name="message" Version="2.9.8">
+   </PACK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="36" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="13515" top="10170" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13515" top="10170" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Element Count|">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="10795" y="6975">
+   </LINKPOINT>
+   <LINKPOINT x="14030" y="6525">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="XYZ" dstnodeid="21" dstpinname="XYZ UnTransformed">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Spread Count" linkstyle="VHV">
+   <LINKPOINT x="11245" y="4455">
+   </LINKPOINT>
+   <LINKPOINT x="7070" y="4455">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Spread Count" linkstyle="VHV">
+   <LINKPOINT x="11245" y="3938">
+   </LINKPOINT>
+   <LINKPOINT x="4955" y="3938">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="5940" top="5115" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="0.5">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="30" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Output" dstnodeid="29" dstpinname="Input">
+   </LINK>
+   <NODE systemname="DynamicBuffer (DX11 ForwardPlus Light)" filename="%VVVV%\packs\ForwardPlus\nodes\plugins\ForwardPlusDynamicBuffer\ForwardPlusDynamicBuffer.csproj" nodename="DynamicBuffer (DX11 ForwardPlus Light)" componentmode="Hidden" id="33">
+   <BOUNDS type="Node" left="645" top="9206" width="11730" height="270">
+   </BOUNDS>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="PositionXYZ" visible="1" slicecount="6" values="-0.785505414009094,-0.200481578707695,-1.56642508506775,0.648966252803802,-2.16707730293274,-0.472353965044022">
+   </PIN>
+   <PIN pinname="DirectionXYZ" visible="1">
+   </PIN>
+   <PIN pinname="Color" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Selected" visible="1" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Type" visible="1">
+   </PIN>
+   <PIN pinname="Buffer" visible="1">
+   </PIN>
+   <PIN pinname="Intensity" visible="1">
+   </PIN>
+   <PIN pinname="Range" visible="1">
+   </PIN>
+   <PIN pinname="SpotlightAngle" visible="1">
+   </PIN>
+   <PIN pinname="Element Count" visible="1" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Apply" visible="1">
+   </PIN>
+   <PIN pinname="PosVSXYZW" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="34" srcpinname="Output Node" dstnodeid="33" dstpinname="View">
    </LINK>
@@ -572,96 +656,12 @@
    <LINKPOINT x="12340" y="8510">
    </LINKPOINT>
    </LINK>
-   <NODE id="35" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
-   <PIN pinname="Descriptive Name" slicecount="1" values="Buffer">
-   </PIN>
-   <BOUNDS type="Box" left="6465" top="10215" width="750" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="6465" top="10215" width="750" height="240">
-   </BOUNDS>
-   </NODE>
    <LINK srcnodeid="33" srcpinname="Buffer" dstnodeid="35" dstpinname="Input Node">
-   </LINK>
-   <LINK srcnodeid="16" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Width">
-   </LINK>
-   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Spread Count">
-   </LINK>
-   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Input" linkstyle="VHV">
-   <LINKPOINT x="4755" y="1253">
-   </LINKPOINT>
-   <LINKPOINT x="11235" y="1253">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="29" srcpinname="Output" dstnodeid="5" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="27" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="27" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Hue">
-   </LINK>
-   <LINK srcnodeid="30" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Width">
-   </LINK>
-   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="12" dstpinname="Y Input Value">
-   </LINK>
-   <BOUNDS type="Window" left="4376" top="24" width="22592" height="14512">
-   </BOUNDS>
-   <PACK Name="message" Version="2.9.8">
-   </PACK>
-   <PACK Name="addonpack" Version="35.0.0">
-   </PACK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="36" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="13515" top="10170" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="13515" top="10170" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Element Count|">
-   </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="36" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="10795" y="6975">
-   </LINKPOINT>
-   <LINKPOINT x="14030" y="6525">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="7" srcpinname="XYZ" dstnodeid="21" dstpinname="XYZ UnTransformed">
    </LINK>
    <LINK srcnodeid="28" srcpinname="Output" dstnodeid="33" dstpinname="Color" linkstyle="VHV">
    <LINKPOINT x="3855" y="7513">
    </LINKPOINT>
    <LINKPOINT x="3855" y="7413">
    </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="29" dstpinname="Spread Count" linkstyle="VHV">
-   <LINKPOINT x="11245" y="4455">
-   </LINKPOINT>
-   <LINKPOINT x="7070" y="4455">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="26" dstpinname="Spread Count" linkstyle="VHV">
-   <LINKPOINT x="11245" y="3938">
-   </LINKPOINT>
-   <LINKPOINT x="4955" y="3938">
-   </LINKPOINT>
-   </LINK>
-   <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="37">
-   <BOUNDS type="Node" left="5940" top="5115" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 2" slicecount="1" values="0.5">
-   </PIN>
-   <PIN pinname="Input 1" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="30" srcpinname="Y Output Value" dstnodeid="37" dstpinname="Input 1">
-   </LINK>
-   <LINK srcnodeid="37" srcpinname="Output" dstnodeid="29" dstpinname="Input">
    </LINK>
    </PATCH>
